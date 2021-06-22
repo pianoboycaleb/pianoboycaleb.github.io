@@ -1,0 +1,94 @@
+{
+	"$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v2/schema.json",
+	"packId": "bikini.styles.monika.etched.edave64",
+	"packCredits": "Created by etched",
+	"version": "2.0",
+	"packName": "Monika Bikini",
+	"authors": ["etched"],
+	"cc2credits": {
+		"left": ["Monika bikini"],
+		"right": ["etched"]
+	},
+	"source": "https://www.reddit.com/r/DDLC/comments/7pjzi0/sorry_im_a_little_late/",
+	"folder": "./",
+	"characters": [
+		{
+			"id": "dddg.buildin.base.monika:ddlc.monika",
+			"styleGroups": [
+				{
+					"id": "bikini",
+					"styles": [
+						{
+							"poses": [
+								{
+									"renderCommands": [
+										{ "type": "head" },
+										{ "type": "pose-part", "part": "Left" },
+										{ "type": "image", "images": ["1br.png"] }
+									],
+									"id": "normal",
+									"compatibleHeads": ["straight"],
+									"positions": {
+										"Left": [["1bl.png"], ["2bl.png"]]
+									}
+								},
+								{
+									"renderCommands": [
+										{ "type": "head" },
+										{ "type": "pose-part", "part": "Left" }
+									],
+									"id": "normal",
+									"compatibleHeads": ["sideways"],
+									"positions": {
+										"Left": [["5b.png"], ["6b.png"]]
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"heads": {
+				"straight": [
+					["ba.png"],
+					["bb.png"],
+					["bc.png"],
+					["bd.png"],
+					["be.png"],
+					["bf.png"],
+					["bg.png"],
+					["bh.png"],
+					["bi.png"],
+					["bj.png"],
+					["bk.png"],
+					["bl.png"],
+					["bm.png"],
+					["bn.png"],
+					["bo.png"],
+					["bp.png"],
+					["bq.png"],
+					["br.png"],
+					["bs.png"],
+					["bt.png"],
+					["bu.png"],
+					["bv.png"],
+					["bw.png"],
+					["bx.png"]
+				],
+				"sideways": {
+					"variants": [
+						["bsidea.png"],
+						["bsideb.png"],
+						["bsidec.png"],
+						["bsided.png"],
+						["bsidee.png"],
+						["bsidef.png"],
+						["bsideg.png"],
+						["bsideh.png"]
+					],
+					"offset": [135, 75]
+				}
+			}
+		}
+	]
+}

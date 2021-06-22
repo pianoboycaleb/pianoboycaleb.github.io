@@ -1,0 +1,28 @@
+{
+    "pack": {
+        "id": "bikini.styles.monika.etched.edave64",
+        "name": "Monika Bikini",
+        "characters": [
+            "Monika"
+        ],
+        "authors": ["etched"],
+        "kind": [
+            "Styles"
+        ],
+        "source": "https://www.reddit.com/r/DDLC/comments/7ny9ud/did_you_bring_snacks/",
+        "dddg2Path": "https://novamonika.github.io/dddg/bikini.styles.monika.etched.edave64/index.json",
+        "description": "",
+        "preview": [
+            "https://novamonika.github.io/dddg/bikini.styles.monika.etched.edave64/ba.png",
+            "https://novamonika.github.io/dddg/bikini.styles.monika.etched.edave64/1bl.png",
+            "https://novamonika.github.io/dddg/bikini.styles.monika.etched.edave64/1br.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "etched": {
+            "reddit": "etched",
+            "twitter": "mahoumeido"
+        }
+    }
+}
