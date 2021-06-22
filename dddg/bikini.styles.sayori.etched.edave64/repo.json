@@ -1,0 +1,26 @@
+{
+    "pack": {
+        "id": "bikini.styles.sayori.etched.edave64",
+        "name": "Sayori Bikini",
+        "characters": [
+            "Sayori"
+        ],
+        "authors": ["etched"],
+        "kind": [
+            "Styles"
+        ],
+        "source": "https://www.reddit.com/r/DDLC/comments/7pjzi0/sorry_im_a_little_late/",
+        "dddg2Path": "https://novamonika.github.io/dddg/bikini.styles.sayori.etched.edave64/index.json",
+        "description": "",
+        "preview": [
+            "https://novamonika.github.io/dddg/bikini.styles.sayori.etched.edave64/c3a.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "etched": {
+            "reddit": "etched",
+            "twitter": "mahoumeido"
+        }
+    }
+}

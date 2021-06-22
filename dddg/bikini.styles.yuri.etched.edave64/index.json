@@ -1,0 +1,84 @@
+{
+	"$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v2/schema.json",
+	"packId": "bikini.styles.yuri.etched.edave64",
+	"packCredits": "Created by etched",
+	"version": "2.0",
+	"packName": "Yuri Bikini",
+	"authors": ["etched"],
+	"cc2credits": {
+		"left": ["Yuri bikini"],
+		"right": ["etched"]
+	},
+	"source": "https://www.reddit.com/r/DDLC/comments/7nieab/yyou_wanted_to_go_to_the_beach/",
+	"folder": "./",
+	"characters": [
+		{
+			"id": "dddg.buildin.yuri:ddlc.yuri",
+			"styleGroups": [
+				{
+					"id": "bikini",
+					"styles": [
+						{
+							"poses": [
+								{
+									"renderCommands": [
+										{ "type": "head" },
+										{ "type": "image", "images": ["1f.png"] }
+
+									],
+									"id": "normal",
+									"compatibleHeads": ["straight"]
+								},
+								{
+									"renderCommands": [
+										{ "type": "head" },
+										{ "type": "image", "images": ["2f.png"] }
+									],
+									"id": "sideways",
+									"compatibleHeads": ["sideways"]
+								}
+							]
+						}
+					]
+				}
+			],
+			"heads": {
+				"straight": [
+					["fa.png"],
+					["fb.png"],
+					["fc.png"],
+					["fd.png"],
+					["fe.png"],
+					["ff.png"],
+					["fg.png"],
+					["fh.png"],
+					["fi.png"],
+					["fj.png"],
+					["fk.png"],
+					["fl.png"],
+					["fm.png"],
+					["fn.png"],
+					["fo.png"],
+					["fp.png"],
+					["fq.png"],
+					["fr.png"],
+					["fs.png"],
+					["ft.png"],
+					["fu.png"],
+					["fv.png"],
+					["fw.png"],
+					["fx.png"],
+					["fy.png"],
+					["fz.png"]
+				],
+				"sideways": [
+					["f2a.png"],
+					["f2b.png"],
+					["f2c.png"],
+					["f2d.png"],
+					["f2e.png"]
+				]
+			}
+		}
+	]
+}
