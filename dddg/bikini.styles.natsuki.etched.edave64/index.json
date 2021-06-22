@@ -1,0 +1,43 @@
+{
+	"$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v2/schema.json",
+	"packId": "bikini.styles.natsuki.etched.edave64",
+	"packCredits": "Created by etched",
+	"version": "2.0",
+	"packName": "Natsuki Bikini",
+	"authors": ["etched"],
+	"cc2credits": {
+		"left": ["Natsuki Bikini"],
+		"right": ["etched"]
+	},
+	"source": "https://www.reddit.com/r/DDLC/comments/7o5y0y/what_are_you_looking_at_lets_go/",
+	"folder": "./",
+	"characters": [
+		{
+			"id": "dddg.buildin.base.natsuki:ddlc.natsuki",
+			"styleGroups": [
+				{
+					"id": "bikini",
+					"styles": [
+						{
+							"poses": [
+								{
+									"renderCommands": [
+										{ "type": "head" },
+										{ "type": "pose-part", "part": "Left" },
+										{ "type": "pose-part", "part": "Right" }
+									],
+									"id": "normal",
+									"compatibleHeads": ["dddg.buildin.base.natsuki:straight", "dddg.buildin.base.natsuki:sideways", "dddg.buildin.base.natsuki:turnedAway"],
+									"positions": {
+										"Left": [["1l.png"], ["2l.png"], ["2p.png"]],
+										"Right": [["1r.png"], ["2r.png"]]
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
