@@ -1,0 +1,27 @@
+{
+    "pack": {
+        "id": "bikini.styles.yuri.etched.edave64",
+        "name": "Yuri Bikini",
+        "characters": [
+            "Yuri"
+        ],
+        "authors": ["etched"],
+        "kind": [
+            "Styles"
+        ],
+        "source": "https://www.reddit.com/r/DDLC/comments/7nieab/yyou_wanted_to_go_to_the_beach/",
+        "dddg2Path": "https://novamonika.github.io/dddg/bikini.styles.yuri.etched.edave64/index.json",
+        "description": "",
+        "preview": [
+            "https://novamonika.github.io/dddg/bikini.styles.yuri.etched.edave64/1f.png",
+            "https://novamonika.github.io/dddg/bikini.styles.yuri.etched.edave64/fa.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "etched": {
+            "reddit": "etched",
+            "twitter": "mahoumeido"
+        }
+    }
+}
