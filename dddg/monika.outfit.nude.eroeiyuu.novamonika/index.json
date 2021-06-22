@@ -1,0 +1,61 @@
+{
+    "$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v1/schema.json",
+    "id": "ddlc.monika",
+    "packId": "monika.outfit.nude.eroeiyuu.novamonika",
+    "packCredits": "Standing sprite - EroEiyuu, Leaning sprite - Fluttair, Edited by SomeoneUnknowns for the DDLC Nude mod, Edited by NovaMonika for DDDG.",
+    "packName": "Nude",
+    "authors": [
+        "EroEiyuu",
+        "Fluttair",
+        "SomeoneUnknowns",
+        "NovaMonika"
+    ],
+    "source": "https://www.reddit.com/r/DDLCRule34/comments/j5r647/ddlcrule34_nude_mod_v10_base/",
+    "comicClubUrl": "#",
+    "cc2credits": {
+        "left": [
+            "Standing sprite",
+            "Leaning sprite",
+            "Edit for the DDLC Nude mod by",
+            "Edit for DDDG by"
+        ],
+        "right": [
+            "EroEiyuu",
+            "Fluttair",
+            "SomeoneUnknowns",
+            "NovaMonika"
+        ]
+    },
+    "styles": [
+        {
+            "name": "nude_eroeiyuu",
+            "label": "Default"
+        }
+    ],
+    "heads": {},
+    "poses": [
+        {
+            "name": "normal-nude_eroeiyuu",
+            "style": "nude_eroeiyuu",
+            "compatibleHeads": [
+                "straight"
+            ],
+            "left": [
+                "./1l.png",
+                "./2l.png"
+            ],
+            "right": [
+                "./1r.png",
+                "./2r.png"
+            ]
+        },
+        {
+            "name": "leaned-nude_eroeiyuu",
+            "style": "nude_eroeiyuu",
+            "compatibleHeads": [
+                "sideways"
+            ],
+            "static": "./3.png"
+        }
+    ]
+}
