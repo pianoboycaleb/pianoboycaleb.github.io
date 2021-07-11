@@ -1,0 +1,29 @@
+{
+    "pack": {
+        "id": "monika.expressions.side.lewd.lunatic_rabbit.novamonika",
+        "name": "Lewd expressions (Leaning pose)",
+        "characters": [
+            "Monika"
+        ],
+        "authors": [
+            "Lunatic Rabbit"
+        ],
+        "kind": [
+            "Expressions"
+        ],
+        "source": "https://www.reddit.com/99rfoa",
+        "dddg2Path": "https://novamonika.github.io/dddg/monika.expressions.side.lewd.lunatic_rabbit.novamonika/index.json",
+        "description": "<a href='https://www.reddit.com/comments/99rfoa' target='_blank' rel='noopener noreferrer'>Created by</a> Lunatic_Rabbit",
+        "preview": [
+            "https://novamonika.github.io/dddg/monika.expressions.side.lewd.lunatic_rabbit.novamonika/t.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "Lunatic Rabbit": {
+            "reddit": "Lunatic_Rabbit",
+            "deviantart": "the-lunatic-rabbit",
+            "twitter": "IchijoPaniPoni"
+        }
+    }
+}
