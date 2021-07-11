@@ -1,0 +1,29 @@
+{
+    "pack": {
+        "id": "sayori.expressions.lewd.lunatic_rabbit.novamonika",
+        "name": "Lewd expressions",
+        "characters": [
+            "Sayori"
+        ],
+        "authors": [
+            "Lunatic Rabbit"
+        ],
+        "kind": [
+            "Expressions"
+        ],
+        "source": "https://www.reddit.com/9a0yo6",
+        "dddg2Path": "https://novamonika.github.io/dddg/sayori.expressions.lewd.lunatic_rabbit.novamonika/index.json",
+        "description": "<a href='https://www.reddit.com/comments/9a0yo6' target='_blank' rel='noopener noreferrer'>Created by</a> Lunatic_Rabbit",
+        "preview": [
+            "https://novamonika.github.io/dddg/sayori.expressions.lewd.lunatic_rabbit.novamonika/a.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "Lunatic Rabbit": {
+            "reddit": "Lunatic_Rabbit",
+            "deviantart": "the-lunatic-rabbit",
+            "twitter": "IchijoPaniPoni"
+        }
+    }
+}
