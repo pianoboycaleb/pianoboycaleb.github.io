@@ -75,7 +75,7 @@
 			</div>
 		</li>
 	</ul>
-	<p>If you notice any issues with the packs, please contact me on <a href="https://www.reddit.com/user/NovaMonika" target="_blank">Reddit</a> or <a href="https://twitter.com/JustNovaMonika" target="_blank">Twitter</a> and <b>please be sure to credit the artists who made the sprites!</b></p>
+	<p>If you notice any issues with the packs, or want to suggest new ones for me to add, please contact me on <a href="https://www.reddit.com/user/NovaMonika" target="_blank">Reddit</a> or <a href="https://twitter.com/JustNovaMonika" target="_blank">Twitter</a> and <b>please be sure to credit the artists who made the sprites!</b></p>
 	<span class="fullwidthbanner"><img src="webimages/example.png"><p class="smallbannertext"><a href="https://novamonika.github.io/dddg/bikini.styles.monika.etched.edave64/repo.json" target="_blank">Example pack "Monika Bikini" by Etched</a></p></span>
 	<br>
 	<p class="footer">Special thanks to <a href="https://www.reddit.com/user/edave64/" target="_blank">edave64</a> for making <a href="https://edave64.github.io/Doki-Doki-Dialog-Generator/release/" target="_blank">Doki Doki Dialog Generator</a>!</p>	
@@ -120,7 +120,6 @@
 		})
 		.then(function (data) {
 			appendData(data);
-			console.log(data)
 		})
 		.catch(function (err) {
 			console.log(err);
@@ -129,6 +128,9 @@
 
 	function appendData(data) {
 
+		data["packs"].forEach(pack => {
+			console.log(pack)
+		});
 	}
 
 	window.onload = ac1()
