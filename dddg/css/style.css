@@ -1,0 +1,360 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	height:100%;
+	background-color: #000000;
+	overflow-y: scroll; 
+}
+
+body { 
+	text-align:left;
+	padding:0;
+	margin:0;
+	line-height: 1;
+	font-family: textbox, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	word-wrap: break-word;
+	width:100%;
+	height:100%;
+}
+
+a{
+outline: 0;	
+text-decoration: none;
+color: #121212;
+}
+
+p {
+	line-height:120%;
+	padding:10px 10px 10px 10px;
+}
+
+i {
+	font-style: italic;
+	padding:0 3px 0 0px;
+}
+
+b {
+	font-weight: bold;
+}
+
+#bg
+{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0;
+	z-index:-1;
+    background-color:#ffbde1;
+	/*background-image: url("images/club.png");*/
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+}
+
+.cutopacity
+{
+	opacity: 0.7;
+}
+
+.fullopacity
+{
+	opacity: 1;
+}
+
+#conetnt
+{
+	position: fixed;
+}
+
+#top
+{
+	background-color: rgba(255, 230, 244, 0.5);
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 998;
+	width: 100%;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    height: auto;
+    text-align: center;
+}
+
+.stripe { 
+    background-color:#ffe6f4;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#toplogo
+{
+    max-width:250px;
+    width:80%;
+    margin: 0 auto;
+    display: block;
+    padding: 20px 0;
+}
+
+.titletext{
+    font-size: 4.5em;
+    text-align: center;
+    /*color: white;
+    text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000;*/
+    padding: 20px 5%;
+    
+}
+
+.titletext2{
+    text-align: center;
+    font-size: 2em;
+    padding: 20px 5%;
+}
+
+.outline{
+    color: white;
+    text-shadow: 
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     0px  1px 0px #000000,
+     0px -1px 0px #000000,
+     0px  2px 0px #000000,
+     0px -2px 0px #000000,
+     1px  0px 0px #000000,
+    -1px  0px 0px #000000,
+     2px  0px 0px #000000,
+    -2px  0px 0px #000000;
+    
+}
+
+#ddlc
+{
+	max-width: 1000px;
+	margin: 0 auto 20px auto;
+	background-color: #ffffff;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	word-wrap: break-word;
+    width:95%;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+#ddlc li
+{
+    margin-left: 0; 
+    padding-left: 0;
+    padding: 5px 0;
+    border: 1px #000000
+}
+
+#ddlc ul
+{
+    padding: 10px 20px
+}
+
+.fullwidthbanner img
+{
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+.fullwidthbanner
+{
+    display: block;
+    padding: 10px 0;
+    width:100%;
+    background-color: rgba(255, 230, 244, 0.5);
+}
+
+.smallbannertext
+{
+    font-size: 12px;
+    display: block;
+    max-width:90%;
+    text-align:right;
+    margin:0 auto
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+a
+{
+    color: #ffbde1;
+    text-shadow: 
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     0px  1px 0px #000000,
+     0px -1px 0px #000000,
+     0px  2px 0px #000000,
+     0px -2px 0px #000000,
+     1px  0px 0px #000000,
+    -1px  0px 0px #000000,
+     2px  0px 0px #000000,
+    -2px  0px 0px #000000;
+}
+
+#ac1_UL {
+    list-style-type: none;
+    padding: 1px 0 0 0;
+    margin: 0;
+}
+    
+.ac1_title:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.ac1_inner {
+    padding: 6px 12px 12px 12px;
+    display: block
+}
+
+.ac1_arrow {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 10px 0 0;
+    color: #ffbde1;
+    text-shadow: 
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px  1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     0px  1px 0px #000000,
+     0px -1px 0px #000000,
+     0px  2px 0px #000000,
+     0px -2px 0px #000000,
+     1px  0px 0px #000000,
+    -1px  0px 0px #000000,
+     2px  0px 0px #000000,
+    -2px  0px 0px #000000;
+}
+
+.footer
+{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.footer a
+{
+    color: #000!important;
+    text-shadow: none!important;
+    text-decoration: underline;
+}
+
+@media screen and (max-width :1200px){
+    .titletext
+    {
+        font-size: 6vw;
+    }
+    .titletext2
+    {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width :850px){
+    .titletext
+    {
+        font-size: 8vw;
+    }
+    .titletext2
+    {
+        font-size: 3.6vw;
+    }
+   
+}   
