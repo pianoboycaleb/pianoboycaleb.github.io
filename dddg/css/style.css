@@ -37,6 +37,16 @@ body {
 	height:100%;
 }
 
+code {
+    font-family: Consolas,Menlo,"courier new",monospace;
+    font-size: 16px;
+    padding: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    display: block;
+}
+
 a{
 outline: 0;	
 text-decoration: none;
@@ -110,6 +120,23 @@ b {
     width: 100%;
     margin-bottom: 40px;
 }
+
+.midstripe { 
+    background-color:#ffe6f4;
+    height: 1px;
+    width: 100%;
+    display: block;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
 
 #toplogo
 {
@@ -321,6 +348,39 @@ a
     -1px  0px 0px #000000,
      2px  0px 0px #000000,
     -2px  0px 0px #000000;
+}
+
+#sfwlist, #nsfwlist{
+    font-size: 16px;
+}
+
+#sfwlist b, #nsfwlist b{
+    font-size: 1.3em;
+}
+
+.previewimg{
+    width:200px;
+    height: 200px;
+    background-color: rgba(255, 230, 244, 0.5);
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.previewimg img{
+    width: 100%;
+    position:absolute;
+    top: 0;
+}
+
+.item {
+    position: relative;
+    display: block;
+}
+
+.info {
+    position:absolute;
+    margin: 10px 0 0 10px;
 }
 
 .footer

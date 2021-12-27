@@ -66,12 +66,11 @@
 			</div>
 		</li>
 		<li class="ac1_li"><span class="ac1_title"><span class="ac1_arrow"><i class="fa fa-chevron-right"></i></span>Pack List</span>
-			<div class="ac1_inner">
-				<p>Text2</div>
+			<div class="ac1_inner" id="sfwlist">
+			</div>
 		</li>
 		<li class="ac1_li"><span class="ac1_title"><span class="ac1_arrow"><i class="fa fa-chevron-right"></i></span>NSFW (18+) Pack List<br></span>
-			<div class="ac1_inner">
-				<p>Text 3</p>
+			<div class="ac1_inner" id="nsfwlist">
 			</div>
 		</li>
 	</ul>
@@ -90,6 +89,7 @@
 			var ac1_item = ac1_g.children[ac1_i].children[1]
 			var ac1_arrow = ac1_g.children[ac1_i].children[0].children[0].children[0]
 			if (ac1_i == index) {
+				ac1_arrow.scrollIntoView();
 				if (ac1_item.style.display == "block") {
 					ac1_item.style.display = "none"
 					ac1_arrow.className = "fa fa-chevron-right"
@@ -113,28 +113,90 @@
 		})(ac1_i);
 	}
 
-	function getjsons(){
+	function getsfwjsons(){
 		fetch('lists/sfwlist.json')
 		.then(function (response) {
 			return response.json();
 		})
-		.then(function (data) {
-			appendData(data);
+		.then(async function (data) {
+			var listdiv = document.getElementById("sfwlist")
+			
+			for (const k of Object.keys(data)) {
+				listdiv.innerHTML += "<p id=\"listsfw"+k+"\"><b class=\"subtitle\">"+k+"</b><span class=\"midstripe\"></span></p>"
+				for (const pack of data[k]) {
+					response = await fetch(pack)
+					jsondata = await response.json();
+					appendData(jsondata, "listsfw"+k);
+				}
+			}
 		})
 		.catch(function (err) {
 			console.log(err);
 		});
 	}
 
-	function appendData(data) {
+	function getnsfwjsons(){
+		fetch('lists/nsfwlist.json')
+		.then(function (response) {
+			return response.json();
+		})
+		.then(async function (data) {
+			var listdiv = document.getElementById("nsfwlist")
+			
+			for (const k of Object.keys(data)) {
+				listdiv.innerHTML += "<p id=\"listnsfw"+k+"\"><b class=\"subtitle\">"+k+"</b><span class=\"midstripe\"></span></p>"
 
-		data["packs"].forEach(pack => {
-			console.log(pack)
+				for (const pack of data[k]) {
+					response = await fetch(pack)
+					jsondata = await response.json();
+					appendData(jsondata, "listnsfw"+k);
+				}
+			}
+		})
+		.catch(function (err) {
+			console.log(err);
 		});
 	}
 
+	async function appendData(data, div) {	
+		
+		var authorslist = "Author(s):<br>"
+
+		for (const author of Object.keys(data["authors"])) {
+			authorslist += "<span>" + author
+			for (const soclink of Object.keys(data["authors"][author])) {
+				switch(soclink) {
+				case "reddit":
+					authorslist += " - <a href=\"https://reddit.com/u/"+data["authors"][author][soclink]+"\" target=\"_blank\">Reddit</a>"
+					break;
+				case "deviantart":
+					authorslist += " - <a href=\"https://www.deviantart.com/"+data["authors"][author][soclink]+"\" target=\"_blank\">DeviantArt</a>"
+					break;
+				case "twitter":
+				authorslist += " - <a href=\"https://twitter.com/"+data["authors"][author][soclink]+"\" target=\"_blank\">Twitter</a>"
+					break;
+				}
+			}
+			authorslist += "</span><br>"
+			
+		}
+
+		var imgpreview = "<br><span class=\"previewimg\">"
+		for (const image of data["pack"]["preview"]) {
+			imgpreview += "<img src=\""+image+"\"/>"
+		}
+		imgpreview += "</span>"
+
+		listdiv = document.getElementById(div)
+		listdiv.innerHTML += "<span class=\"item\"><b>"+	data["pack"]["characters"].toString()+" - " + data["pack"]["name"]+"</b>"+
+		imgpreview + "<span class=\"info\">" + authorslist+"<br><a href=\""+data["pack"]["source"]+"\" target=\"_blank\">Source</a><br></span>"+
+		"<code>https://novamonika.github.io/dddg/"+data["pack"]["id"]+"/repo.json</code>"+
+		"</span><span class=\"midstripe\"></span>";
+	}
+
 	window.onload = ac1()
-	window.onload = getjsons()
+	window.onload = getsfwjsons()
+	window.onload = getnsfwjsons()
 </script>
 
 </body>
