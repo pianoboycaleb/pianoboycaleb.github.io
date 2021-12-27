@@ -81,6 +81,19 @@
 <script type="text/javascript">
 
 	var chrlist = []
+	const queryString = window.location.search;
+	const urlParams = new URLSearchParams(queryString);
+
+	const entries = urlParams.entries();
+
+	var nsfwtick = "unchecked";
+	for(const entry of entries) {
+		if (entry[0].toUpperCase() == "NSFW") {
+			if (entry[1] == 1){
+				nsfwtick = "checked";
+			}
+		}
+	}
 
 	function ac1(index) {
 		var ac1_g = document.getElementById('ac1_UL');
@@ -133,7 +146,7 @@
 				}
 			}
 
-			typemenu += "<span class=\"inputlabel\"><input type=\"checkbox\" class=\"nsfwcheckbox\" id=\"cbNSFW\" name=\"nsfw\" onclick=\"updatelists()\" unchecked><label for=\"cbNSFW\">NSFW (18+)</label></span>"
+			typemenu += "<span class=\"inputlabel\"><input type=\"checkbox\" class=\"nsfwcheckbox\" id=\"cbNSFW\" name=\"nsfw\" onclick=\"updatelists()\" "+nsfwtick+"><label for=\"cbNSFW\">NSFW (18+)</label></span>"
 			
 			chrmenu = "<br>Characters:<br>"
 
@@ -233,7 +246,15 @@
 		});
 
 		document.querySelectorAll('.listtype').forEach(function(listtype) {
-    		console.log(listtype.getElementsByTagName('*').length)			
+    		var total = 0			
+			listtype.querySelectorAll('.item').forEach(function(item){
+	 	 		if (!(window.getComputedStyle(item).display  === "none")) {
+					total += 1
+				}
+			})
+			if (total == 0){
+				listtype.style.setProperty('display', 'none');
+			}
 		});
 
 
