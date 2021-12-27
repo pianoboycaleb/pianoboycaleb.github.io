@@ -66,11 +66,7 @@
 			</div>
 		</li>
 		<li class="ac1_li"><span class="ac1_title"><span class="ac1_arrow"><i class="fa fa-chevron-right"></i></span>Pack List</span>
-			<div class="ac1_inner" id="sfwlist">
-			</div>
-		</li>
-		<li class="ac1_li"><span class="ac1_title"><span class="ac1_arrow"><i class="fa fa-chevron-right"></i></span>NSFW (18+) Pack List<br></span>
-			<div class="ac1_inner" id="nsfwlist">
+			<div class="ac1_inner" id="packlist">
 			</div>
 		</li>
 	</ul>
@@ -83,6 +79,9 @@
 
 
 <script type="text/javascript">
+
+	var chrlist = []
+
 	function ac1(index) {
 		var ac1_g = document.getElementById('ac1_UL');
 		for (var ac1_i = 0, ac1_len = ac1_g.children.length; ac1_i < ac1_len; ac1_i++) {
@@ -113,52 +112,44 @@
 		})(ac1_i);
 	}
 
-	function getsfwjsons(){
-		fetch('lists/sfwlist.json')
+	function getjsons(){
+		fetch('lists/packlist.json')
 		.then(function (response) {
 			return response.json();
 		})
 		.then(async function (data) {
-			var listdiv = document.getElementById("sfwlist")
+			var listdiv = document.getElementById("packlist")
+			
+			var typemenu = "Pack Types:<br>"
 			
 			for (const k of Object.keys(data)) {
-				listdiv.innerHTML += "<p id=\"listsfw"+k+"\"><b class=\"subtitle\">"+k+"</b><span class=\"midstripe\"></span></p>"
+				typemenu += "<span class=\"inputlabel\"><input type=\"checkbox\" class=\"typecheckbox\" id=\"cb"+k+"\" name=\""+k+"\" onclick=\"updatelists()\" checked><label for=\"cb"+k+"\">"+k+"</label></span>"
+
+				listdiv.innerHTML += "<p class=\"listtype "+k+"\" id=\"list"+k+"\"><b class=\"subtitle\">"+k+"</b><span class=\"midstripe\"></span></p>"
 				for (const pack of data[k]) {
-					response = await fetch(pack)
+					response = await fetch(pack[1])
 					jsondata = await response.json();
-					appendData(jsondata, "listsfw"+k);
+					appendData(jsondata, "list"+k, pack[0]);
 				}
 			}
+
+			typemenu += "<span class=\"inputlabel\"><input type=\"checkbox\" class=\"nsfwcheckbox\" id=\"cbNSFW\" name=\"nsfw\" onclick=\"updatelists()\" unchecked><label for=\"cbNSFW\">NSFW (18+)</label></span>"
+			
+			chrmenu = "<br>Characters:<br>"
+
+			for (const chr of chrlist) {
+				chrmenu +="<span class=\"inputlabel\"><input type=\"checkbox\" class=\"chrcheckbox\" id=\"cb"+chr[0]+"\" name=\""+chr[0]+"\" onclick=\"updatelists()\" checked><label for=\"cb"+chr[0]+"\">"+chr[1]+"</label></span>"
+			}
+
+			listdiv.innerHTML = "<span id=\"typechrmenu\">"+ typemenu + chrmenu + "</span>" + listdiv.innerHTML
+			updatelists()
 		})
 		.catch(function (err) {
 			console.log(err);
 		});
 	}
 
-	function getnsfwjsons(){
-		fetch('lists/nsfwlist.json')
-		.then(function (response) {
-			return response.json();
-		})
-		.then(async function (data) {
-			var listdiv = document.getElementById("nsfwlist")
-			
-			for (const k of Object.keys(data)) {
-				listdiv.innerHTML += "<p id=\"listnsfw"+k+"\"><b class=\"subtitle\">"+k+"</b><span class=\"midstripe\"></span></p>"
-
-				for (const pack of data[k]) {
-					response = await fetch(pack)
-					jsondata = await response.json();
-					appendData(jsondata, "listnsfw"+k);
-				}
-			}
-		})
-		.catch(function (err) {
-			console.log(err);
-		});
-	}
-
-	async function appendData(data, div) {	
+	async function appendData(data, div, sfw) {	
 		
 		var authorslist = "Author(s):<br>"
 
@@ -181,22 +172,75 @@
 			
 		}
 
-		var imgpreview = "<br><span class=\"previewimg\">"
+		var imgpreview = "<br><span class=\"previewimgcont\"><span class=\"previewimg\">"
 		for (const image of data["pack"]["preview"]) {
 			imgpreview += "<img src=\""+image+"\"/>"
 		}
-		imgpreview += "</span>"
+		imgpreview += "</span></span>"
+
+		chrclasses = ""
+
+		for (const chr of data["pack"]["characters"]) {
+			tempchr = chr.replace(/[^A-Za-z']/g, "")
+			
+			let exists = chrlist.find(el => el[0] === tempchr);
+
+			if (!exists) {
+				chrlist.push([tempchr, chr]) 
+  			}
+			
+			chrclasses += tempchr + " "
+		}
 
 		listdiv = document.getElementById(div)
-		listdiv.innerHTML += "<span class=\"item\"><b>"+	data["pack"]["characters"].toString()+" - " + data["pack"]["name"]+"</b>"+
+		listdiv.innerHTML += "<span class=\"item "+sfw+" "+chrclasses+"\"><b>"+data["pack"]["characters"].join(', ')+" - " + data["pack"]["name"]+"</b>"+
 		imgpreview + "<span class=\"info\">" + authorslist+"<br><a href=\""+data["pack"]["source"]+"\" target=\"_blank\">Source</a><br></span>"+
 		"<code>https://novamonika.github.io/dddg/"+data["pack"]["id"]+"/repo.json</code>"+
-		"</span><span class=\"midstripe\"></span>";
+		"<span class=\"midstripe\"></span></span>";
+	}
+
+	function updatelists() {
+		document.querySelectorAll('.typecheckbox').forEach(function(checkbox) {
+    		if (checkbox.checked) {
+				document.querySelectorAll('.'+checkbox.name).forEach(function(item) {
+					item.style.setProperty('display', 'block');
+				});
+			} else {
+				document.querySelectorAll('.'+checkbox.name).forEach(function(item) {
+					item.style.setProperty('display', 'none');
+				});
+			}
+		});
+
+		document.querySelectorAll('.item').forEach(function(item){
+			item.style.removeProperty('display');
+		})
+
+		document.querySelectorAll('.chrcheckbox').forEach(function(checkbox) {
+    		if (checkbox.checked) {
+				document.querySelectorAll('.'+checkbox.name).forEach(function(item) {
+					item.style.setProperty('display', 'block');
+				});
+			}
+		});
+
+		document.querySelectorAll('.nsfwcheckbox').forEach(function(checkbox) {
+    		if (!checkbox.checked) {
+				document.querySelectorAll('.'+checkbox.name).forEach(function(item) {
+					item.style.setProperty('display', 'none', 'important');
+				});
+			}
+		});
+
+		document.querySelectorAll('.listtype').forEach(function(listtype) {
+    		console.log(listtype.getElementsByTagName('*').length)			
+		});
+
+
 	}
 
 	window.onload = ac1()
-	window.onload = getsfwjsons()
-	window.onload = getnsfwjsons()
+	window.onload = getjsons()
 </script>
 
 </body>
