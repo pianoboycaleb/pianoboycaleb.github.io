@@ -1,0 +1,28 @@
+{
+    "pack": {
+        "id": "monika.outfit.stegosaurushoodie.bluequacker.novamonika",
+        "name": "Stegosaurus Hoodie",
+        "characters": [
+            "Monika"
+        ],
+        "authors": [
+            "Blue Quacker"
+        ],
+        "kind": [
+            "Styles"
+        ],
+        "source": "https://www.reddit.com/r/DDLC/comments/sdizu8/monikas_stegosaurus_hoodie_public_sprite_pack/",
+        "dddg2Path": "https://novamonika.github.io/dddg/monika.outfit.stegosaurushoodie.bluequacker.novamonika/index.json",
+        "description": "Monika Stegosaurus Hoodie made by Blue Quacker, u/BlueGodXD on Reddit.",
+        "preview": [
+            "https://novamonika.github.io/dddg/monika.outfit.stegosaurushoodie.bluequacker.novamonika/1l.png",
+            "https://novamonika.github.io/dddg/monika.outfit.stegosaurushoodie.bluequacker.novamonika/1r.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "Blue Quacker": {
+            "reddit": "BlueGodXD"
+        }
+    }
+}

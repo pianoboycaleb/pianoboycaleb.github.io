@@ -1,0 +1,54 @@
+{
+    "$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v1/schema.json",
+    "id": "ddlc.monika",
+    "packId": "monika.outfit.stegosaurushoodie.bluequacker.novamonika",
+    "packCredits": "Monika Stegosaurus Hoodie made by Blue Quacker, u/BlueGodXD on Reddit.",
+    "packName": "Stegosaurus Hoodie",
+    "authors": [
+        "Blue Quacker"
+    ],
+    "source": "https://www.reddit.com/r/DDLC/comments/sdizu8/monikas_stegosaurus_hoodie_public_sprite_pack/",
+    "styles": [
+        {
+            "name": "stegosaurushoodie_bluequacker",
+            "label": "Default"
+        }
+    ],
+    "heads": {},
+    "poses": [
+        {
+            "name": "normal-stegosaurushoodie_bluequacker",
+            "style": "stegosaurushoodie_bluequacker",
+            "compatibleHeads": [
+                "straight"
+            ],
+            "left": [
+                "./1l.png",
+                "./2l.png"
+            ],
+            "right": [
+                "./1r.png",
+                "./2r.png",
+                "./3r.png",
+                "./4r.png"
+            ]
+        },
+        {
+            "name": "leaned1-stegosaurushoodie_bluequacker",
+            "style": "stegosaurushoodie_bluequacker",
+            "compatibleHeads": [
+                "sideways"
+            ],
+            "static": "./5.png"
+        },
+        {
+            "name": "leaned2-stegosaurushoodie_bluequacker",
+            "style": "stegosaurushoodie_bluequacker",
+            "compatibleHeads": [
+                "sideways"
+            ],
+            "static": "./6.png"
+        }
+        
+    ]
+}
