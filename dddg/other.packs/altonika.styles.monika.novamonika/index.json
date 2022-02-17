@@ -24,12 +24,13 @@
 									"renderCommands": [
 										{ "type": "head" },
 										{ "type": "pose-part", "part": "Left" },
-										{ "type": "image", "images": ["1r.png"] }
+										{ "type": "pose-part", "part": "Right" }
 									],
 									"id": "normal",
 									"compatibleHeads": ["straight"],
 									"positions": {
-										"Left": [["1l.png"], ["2l.png"]]
+										"Left": [["1l.png"], ["2l.png"]],
+										"Right": [["1r.png"], ["2r.png"]]
 									}
 								},
 								{

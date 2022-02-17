@@ -1,9 +1,9 @@
 {
     "pack": {
         "id": "altonika.styles.monika.novamonika",
-        "name": "Bikini",
+        "name": "Altonika",
         "characters": [
-            "Altonika"
+            "Monika"
         ],
         "authors": ["NovaMonika"],
         "kind": [
