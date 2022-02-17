@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v2/schema.json",
+	"packId": "altonika.styles.monika.novamonika",
+	"packCredits": "Created by NovaMonika",
+	"version": "2.0",
+	"packName": "Altonika",
+	"authors": ["NovaMonika"],
+	"cc2credits": {
+		"left": ["Altonika"],
+		"right": ["NovaMonika"]
+	},
+	"source": "https://www.reddit.com/user/NovaMonika",
+	"folder": "./",
+	"characters": [
+		{
+			"id": "dddg.buildin.base.monika:ddlc.monika",
+			"styleGroups": [
+				{
+					"id": "Altonika",
+					"styles": [
+						{
+							"poses": [
+								{
+									"renderCommands": [
+										{ "type": "head" },
+										{ "type": "pose-part", "part": "Left" },
+										{ "type": "image", "images": ["1r.png"] }
+									],
+									"id": "normal",
+									"compatibleHeads": ["straight"],
+									"positions": {
+										"Left": [["1l.png"], ["2l.png"]]
+									}
+								},
+								{
+									"renderCommands": [
+										{ "type": "head" },
+										{ "type": "pose-part", "part": "Left" }
+									],
+									"id": "normal",
+									"compatibleHeads": ["sideways"],
+									"positions": {
+										"Left": [["3.png"]]
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"heads": {
+				"straight": [
+					["a.png"],
+					["b.png"],
+					["c.png"],
+					["d.png"],
+					["e.png"],
+					["f.png"],
+					["g.png"],
+					["h.png"],
+					["i.png"],
+					["j.png"],
+					["k.png"],
+					["l.png"],
+					["m.png"],
+					["n.png"],
+					["o.png"],
+					["p.png"],
+					["q.png"],
+					["r.png"]
+				],
+				"sideways": {
+					"variants": [
+						["3a.png"],
+						["3b.png"]
+					],
+					"offset": [135, 75]
+				}
+			}
+		}
+	]
+}

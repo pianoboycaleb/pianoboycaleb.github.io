@@ -1,0 +1,27 @@
+{
+    "pack": {
+        "id": "altonika.styles.monika.novamonika",
+        "name": "Bikini",
+        "characters": [
+            "Altonika"
+        ],
+        "authors": ["NovaMonika"],
+        "kind": [
+            "Styles"
+        ],
+        "source": "https://www.reddit.com/user/NovaMonika",
+        "dddg2Path": "https://novamonika.github.io/dddg/other.packs/altonika.styles.monika.novamonika/index.json",
+        "description": "",
+        "preview": [
+            "https://novamonika.github.io/dddg/other.packs/altonika.styles.monika.novamonika/a.png",
+            "https://novamonika.github.io/dddg/other.packs/altonika.styles.monika.novamonika/1l.png",
+            "https://novamonika.github.io/dddg/other.packs/altonika.styles.monika.novamonika/1r.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "etched": {
+            "reddit": "NovaMonika"
+        }
+    }
+}
