@@ -1,42 +1,33 @@
 {
     "$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v1/schema.json",
     "id": "ddlc.natsuki",
-    "packId": "natsuki.outfit.nude.eroeiyuu.novamonika",
-    "packCredits": "Standing sprite - EroEiyuu, Crossed arms sprite - Fluttair, Edited by SomeoneUnknowns for the DDLC Nude mod, Edited by NovaMonika for DDDG.",
-    "packName": "Nude",
+    "packId": "natsuki.outfit.lpn.silver.pianoboycaleb",
+    "packCredits": "Lead Pipe edit by Silver, Edited by Cleb for DDDG.",
+    "packName": "Lead Pipe Natsuki",
     "authors": [
-        "EroEiyuu",
-        "Fluttair",
-        "SomeoneUnknowns",
-        "NovaMonika"
+        "Silver",
     ],
     "source": "https://www.reddit.com/r/DDLCRule34/comments/j5r647/ddlcrule34_nude_mod_v10_base/",
     "comicClubUrl": "#",
     "cc2credits": {
         "left": [
-            "Standing sprite",
-            "Crossed arms sprite",
-            "Edit for the DDLC Nude mod by",
-            "Edit for DDDG by"
+            "Lead Pipe Edit",
         ],
         "right": [
-            "EroEiyuu",
-            "Fluttair",
-            "SomeoneUnknowns",
-            "NovaMonika"
+            "Silver",
         ]
     },
     "styles": [
         {
-            "name": "nude_eroeiyuu",
+            "name": "lpn",
             "label": "Default"
         }
     ],
     "heads": {},
     "poses": [
         {
-            "name": "normal-nude_eroeiyuu",
-            "style": "nude_eroeiyuu",
+            "name": "lpnat",
+            "style": "lpn",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
@@ -54,8 +45,8 @@
             ]
         },
         {
-            "name": "leaned-nude_eroeiyuu",
-            "style": "nude_eroeiyuu",
+            "name": "lpnatlean",
+            "style": "lpn",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
