@@ -19,15 +19,15 @@
     },
     "styles": [
         {
-            "name": "lpn",
+            "name": "nude_eroeiyuu",
             "label": "Default"
         }
     ],
     "heads": {},
     "poses": [
         {
-            "name": "lpnat",
-            "style": "lpn",
+            "name": "normal-nude_eroeiyuu",
+            "style": "nude_eroeiyuu",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
@@ -45,8 +45,8 @@
             ]
         },
         {
-            "name": "lpnatlean",
-            "style": "lpn",
+            "name": "leaned-nude_eroeiyuu",
+            "style": "nude_eroeiyuu",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
