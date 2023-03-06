@@ -1,7 +1,7 @@
 {
     "$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v1/schema.json",
     "id": "ddlc.natsuki",
-    "packId": "natsuki.outfit.nude.eroeiyuu.novamonika",
+    "packId": "natsuki.outfit.lpn.silver.cleb",
     "packCredits": "Lead Pipe edit by Silver, Edited by Cleb for DDDG.",
     "packName": "Lead Pipe Natsuki",
     "authors": [
@@ -22,15 +22,15 @@
     },
     "styles": [
         {
-            "name": "nude_eroeiyuu",
+            "name": "lpn_silver",
             "label": "Default"
         }
     ],
     "heads": {},
     "poses": [
         {
-            "name": "normal-nude_eroeiyuu",
-            "style": "nude_eroeiyuu",
+            "name": "normal-lpn-silver",
+            "style": "lpn-silver",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
@@ -48,8 +48,8 @@
             ]
         },
         {
-            "name": "leaned-nude_eroeiyuu",
-            "style": "nude_eroeiyuu",
+            "name": "leaned-lpn-silver",
+            "style": "lpn-silver",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
