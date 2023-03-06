@@ -30,7 +30,7 @@
         }
     ],
     "heads": {
-        "ws_straight": [
+        "waitress": [
             "./a.png",
             "./b.png",
             "./c.png",
@@ -55,21 +55,7 @@
             "./v.png",
             "./w.png",
             "./x.png",
-            "./y.png",
-            "./z.png",
-            "./aa.png",
-            "./ab.png",
-            "./ac.png",
-            "./ad.png",
-            "./ae.png",
-            "./af.png",
-            "./ag.png",
-            "./ah.png",
-            "./ai.png",
-            "./aj.png",
-            "./ak.png",
-            "./al.png",
-            "./am.png"
+            "./y.png"
 
         ]
     },
@@ -78,7 +64,7 @@
             "name": "normal-ws_silver",
             "style": "ws_silver",
             "compatibleHeads": [
-                "ws_straight"
+                "waitress"
             ],
             "left": [
                 "./1l.png",
