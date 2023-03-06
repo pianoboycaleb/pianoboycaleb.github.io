@@ -1,0 +1,63 @@
+{
+    "$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v1/schema.json",
+    "id": "ddlc.monika",
+    "packId": "monika.outfit.cm.silver.cleb",
+    "packCredits": "Sprite edit by Silver, Edited by Cleb for DDDG.",
+    "packName": "Camera Monika",
+    "authors": [
+        "Silver",
+        "Cleb"
+    ],
+    "source": "https://www.reddit.com/r/DDLCMods/comments/10zewq3/ghy_free_use_sprites_jumpscare/",
+    "comicClubUrl": "#",
+    "cc2credits": {
+        "left": [
+            "Sprite Edit",
+            "Edit for DDDG by"
+        ],
+        "right": [
+            "SIlver",
+            "Cleb"
+        ]
+    },
+    "styles": [
+        {
+            "name": "cm_silver",
+            "label": "Default"
+        }
+    ],
+    "heads": {
+        "cmstraight":[
+            "./a.png"
+        ],
+        "cmsideways":[
+            "./b.png"
+        ]
+    },
+    "poses": [
+        {
+            "name": "normal-cm_silver",
+            "style": "cm_silver",
+            "compatibleHeads": [
+                "cmstraight"
+            ],
+            "left": [
+                "./1l.png",
+                "./2l.png",
+                "./3l.png"
+            ],
+            "right": [
+                "./1r.png",
+                "./2r.png"
+            ]
+        },
+        {
+            "name": "leaned-cm_silver",
+            "style": "cm_silver",
+            "compatibleHeads": [
+                "cmsideways"
+            ],
+            "static": "./3.png"
+        }
+    ]
+}

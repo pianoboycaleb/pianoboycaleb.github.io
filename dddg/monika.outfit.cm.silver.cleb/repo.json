@@ -1,0 +1,33 @@
+{
+    "pack": {
+        "id": "monika.outfit.cm.silver.cleb",
+        "name": "Camera Monika",
+        "characters": [
+            "Monika"
+        ],
+        "authors": [
+            "Silver",
+            "Cleb"
+        ],
+        "kind": [
+            "Styles"
+        ],
+        "source": "https://www.reddit.com/r/DDLCMods/comments/10zewq3/ghy_free_use_sprites_jumpscare/",
+        "dddg2Path": "https://pianoboycaleb.github.io/dddg/monika.outfit.cm.silver.cleb/index.json",
+        "description": "Sprite edit by Silver, Edited by Cleb for DDDG.",
+        "preview": [
+            "https://pianoboycaleb.github.io/dddg/monika.outfit.cm.silver.cleb/a.png",
+            "https://pianoboycaleb.github.io/dddg/monika.outfit.cm.silver.cleb/1l.png",
+            "https://pianoboycaleb.github.io/dddg/monika.outfit.cm.silver.cleb/1r.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "Silver": {
+            "reddit": "SiI_ver_"
+        },
+        "Cleb": {
+            "reddit": "CalebthePianist"
+        }
+    }
+}
