@@ -1,0 +1,32 @@
+{
+    "pack": {
+        "id": "spamto.boobielover103.cleb",
+        "name": "Spamto",
+        "characters": [
+            "Spamto"
+        ],
+        "authors": [
+            "Silver",
+            "Cleb"
+        ],
+        "kind": [
+            "Characters"
+        ],
+        "source": "https://www.reddit.com/r/DDLCMods/comments/xrrg3g/i_am_making_my_sprites_of_spamto_from_doki_doki/",
+        "dddg2Path": "https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/index.json",
+        "description": "Spamton by Toby Fox, Spamto by boobielover103, Edited for use in DDDG by Cleb",
+        "preview": [
+            "https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/1.png",
+            "https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/a.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "Silver": {
+            "reddit": "SiI_ver_"
+        },
+        "Cleb": {
+            "reddit": "CalebthePianist"
+        }
+    }
+}

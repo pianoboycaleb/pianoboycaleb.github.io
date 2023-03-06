@@ -1,0 +1,37 @@
+{
+	"$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v1/schema.json",
+	"packId": "spamto.boobielover103.cleb",
+	"packCredits": "Spamton by Toby Fox, Spamto by boobielover103, Edited for use in DDDG by Cleb",
+	"packName": "Spamto",
+	"authors": ["boobielover103", "Cleb"],
+	"id": "ddlc.deltarune.spamto",
+	"name": "Spamto",
+	"chibi": "",
+	"source": "https://www.reddit.com/r/DDLCMods/comments/xrrg3g/i_am_making_my_sprites_of_spamto_from_doki_doki/",
+	"folder": "./",
+	"styles": [
+		{
+			"name": "suit",
+			"label": "Suit"
+		}
+	],
+	"heads": {
+		"straight": [
+			"a.png"
+		]
+	},
+	"poses": [
+		{
+			"name": "normal",
+			"style": "suit",
+			"compatibleHeads": ["straight"],
+			"static": "1.png"
+		},
+		{
+			"name": "gun",
+			"style": "suit",
+			"compatibleHeads": ["straight"],
+			"static": "2.png"
+		}
+	]
+}
