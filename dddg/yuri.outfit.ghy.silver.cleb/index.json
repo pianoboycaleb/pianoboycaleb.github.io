@@ -1,39 +1,36 @@
 {
     "$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v1/schema.json",
     "id": "ddlc.yuri",
-    "packId": "yuri.outfit.nude.eroeiyuu.novamonika",
-    "packCredits": "Standing sprite - EroEiyuu, Edited by SomeoneUnknowns for the DDLC Nude mod, Edited by NovaMonika for DDDG.",
-    "packName": "Nude",
+    "packId": "yuri.outfit.ghy.silver.cleb",
+    "packCredits": "Sprite edit by Silver, Edited by Cleb for DDDG.",
+    "packName": "Grappling Hook Yuri",
     "authors": [
-        "EroEiyuu",
-        "SomeoneUnknowns",
-        "NovaMonika"
+        "Silver",
+        "Cleb"
     ],
-    "source": "https://www.reddit.com/r/DDLCRule34/comments/j5r647/ddlcrule34_nude_mod_v10_base/",
+    "source": "https://www.reddit.com/r/DDLCMods/comments/10zewq3/ghy_free_use_sprites_jumpscare/",
     "comicClubUrl": "#",
     "cc2credits": {
         "left": [
-            "Standing sprite",
-            "Edit for the DDLC Nude mod by",
+            "Sprite edits by",
             "Edit for DDDG by"
         ],
         "right": [
-            "EroEiyuu",
-            "SomeoneUnknowns",
-            "NovaMonika"
+            "Silver",
+            "Cleb"
         ]
     },
     "styles": [
         {
-            "name": "nude_eroeiyuu",
+            "name": "ghy-silver",
             "label": "Default"
         }
     ],
     "heads": {},
     "poses": [
         {
-            "name": "normal-nude_eroeiyuu",
-            "style": "nude_eroeiyuu",
+            "name": "normal-ghy-silver",
+            "style": "ghy-silver",
             "compatibleHeads": [
                 "straight"
             ],
@@ -43,7 +40,10 @@
             ],
             "right": [
                 "./1r.png",
-                "./2r.png"
+                "./2r.png",
+                "./3r.png",
+                "./4r.png",
+                "./5r.png"
             ]
         }
     ]
