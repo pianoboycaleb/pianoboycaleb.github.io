@@ -8,4 +8,8 @@ Lead Pipe Natsuki: https://pianoboycaleb.github.io/dddg/natsuki.outfit.lpn.silve
 
 Grappling Hook Yuri: https://pianoboycaleb.github.io/dddg/yuri.outfit.ghy.silver.cleb/index.json
 
+Camera Monika: https://pianoboycaleb.github.io/dddg/monika.outfit.cm.silver.cleb/index.json
+
 Spamto: https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/index.json
+
+Random Guy: https://pianoboycaleb.github.io/dddg/randomguy.tmm.cleb/index.json
