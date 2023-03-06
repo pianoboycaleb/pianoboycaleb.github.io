@@ -33,24 +33,24 @@
     },
     {
         "pack": {
-            "id": "spamto.boobielover103.cleb",
-            "name": "Spamto",
+            "id": "yuri.outfit.ghy.silver.cleb",
+            "name": "Grappling Hook Yuri",
             "characters": [
-                "Spamto"
+                "Yuri"
             ],
             "authors": [
                 "Silver",
                 "Cleb"
             ],
             "kind": [
-                "Characters"
+                "Styles"
             ],
-            "source": "https://www.reddit.com/r/DDLCMods/comments/xrrg3g/i_am_making_my_sprites_of_spamto_from_doki_doki/",
-            "dddg2Path": "https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/index.json",
-            "description": "Spamton by Toby Fox, Spamto by boobielover103, Edited for use in DDDG by Cleb",
+            "source": "https://www.reddit.com/r/DDLCMods/comments/10zewq3/ghy_free_use_sprites_jumpscare/",
+            "dddg2Path": "https://pianoboycaleb.github.io/dddg/yuri.outfit.ghy.silver.cleb/index.json",
+            "description": "Sprite edit by Silver, Edited by Cleb for DDDG.",
             "preview": [
-                "https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/1.png",
-                "https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/a.png"
+                "https://pianoboycaleb.github.io/dddg/yuri.outfit.ghy.silver.cleb/2l.png",
+                "https://pianoboycaleb.github.io/dddg/yuri.outfit.ghy.silver.cleb/3r.png"
             ],
             "searchWords": []
         },
