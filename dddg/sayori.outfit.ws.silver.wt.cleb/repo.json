@@ -1,0 +1,36 @@
+{
+    "pack": {
+        "id": "sayori.outfit.ws.silver.wt.cleb",
+        "name": "Waitress Sayori",
+        "characters": [
+            "Sayori"
+        ],
+        "authors": [
+            "Silver",
+            "Wretched Team",
+            "Cleb"
+        ],
+        "kind": [
+            "Styles"
+        ],
+        "source": "https://www.reddit.com/r/DDLCMods/comments/10zewq3/ghy_free_use_sprites_jumpscare/",
+        "dddg2Path": "https://pianoboycaleb.github.io/dddg/sayori.outfit.ws.silver.wt.cleb/index.json",
+        "description": "Sprite Edit - Silver, Alternate Clothing - Wretched Team, Edited by Cleb for DDDG.",
+        "preview": [
+            "https://pianoboycaleb.github.io/dddg/sayori.outfit.ws.silver.wt.cleb/1l.png",
+            "https://pianoboycaleb.github.io/dddg/sayori.outfit.ws.silver.wt.cleb/1r.png"
+        ],
+        "searchWords": []
+    },
+    "authors": {
+        "Silver": {
+            "reddit": "SiI_ver_"
+        },
+        "Wretched Team": {
+            "reddit": "WretchedTeam"
+        },
+        "Cleb": {
+            "reddit": "CalebthePianist"
+        }
+    }
+}
