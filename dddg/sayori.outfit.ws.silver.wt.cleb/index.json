@@ -30,7 +30,7 @@
         }
     ],
     "heads": {
-        "straight": [
+        "ws_straight": [
             "./a.png",
             "./b.png",
             "./c.png",
@@ -78,7 +78,7 @@
             "name": "normal-ws_silver",
             "style": "ws_silver",
             "compatibleHeads": [
-                "straight"
+                "ws_straight"
             ],
             "left": [
                 "./1l.png",
