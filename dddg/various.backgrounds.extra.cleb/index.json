@@ -1,0 +1,34 @@
+{
+	"$schema": "https://raw.githubusercontent.com/edave64/doki-doki-dialog-generator-pack-format/master/src/v2/schema.json",
+	"version": "2.0",
+	"packId": "various.backgrounds.extra.cleb",
+	"packName": "Extra Backgrounds",
+	"packCredits": "Various backgrounds from the DDLC Community Drive, DDLC+, and more.",
+	"ddcc2Path": "",
+	"authors": [
+		"Various"
+	],
+	"cc2credits": {
+		"left": ["Various Artists"],
+		"right": ["(No not them)"]
+	},
+	"folder": "./",
+	"backgrounds": [
+		{
+			"id": "mio_sitting",
+			"label": "Mio sitting",
+			"variants": [
+				["sitting_1.png"],
+				["sitting_2.png"]
+			]
+		},
+		{
+			"id": "mio_kneeling",
+			"label": "Mio kneeling",
+			"variants": [
+				["kneeling_1.png"],
+				["kneeling_2.png"]
+			]
+		}
+	]
+}

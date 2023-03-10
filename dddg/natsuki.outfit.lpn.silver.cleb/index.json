@@ -29,8 +29,8 @@
     "heads": {},
     "poses": [
         {
-            "name": "normal-lpn-silver",
-            "style": "lpn-silver",
+            "name": "normal-lpn_silver",
+            "style": "lpn_silver",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
@@ -48,8 +48,8 @@
             ]
         },
         {
-            "name": "leaned-lpn-silver",
-            "style": "lpn-silver",
+            "name": "leaned-lpn_silver",
+            "style": "lpn_silver",
             "compatibleHeads": [
                 "straight",
                 "straight_nsfw",
