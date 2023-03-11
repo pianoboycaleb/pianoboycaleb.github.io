@@ -15,19 +15,135 @@
 	"folder": "./",
 	"backgrounds": [
 		{
-			"id": "mio_sitting",
-			"label": "Mio sitting",
+			"id": "music_room_cleb",
+			"label": "Music Room",
 			"variants": [
-				["sitting_1.png"],
-				["sitting_2.png"]
+				["music-room.png"],
+				["music_room_afternoon.png"],
+				["music_room_darkthing.png"],
+				["music_room_night.png"]
 			]
 		},
 		{
-			"id": "mio_kneeling",
-			"label": "Mio kneeling",
+			"id": "vending_machine_cleb",
+			"label": "Vending Machine",
 			"variants": [
-				["kneeling_1.png"],
-				["kneeling_2.png"]
+				["vendingmachine.png"],
+				["vending_machine_afternoon.png"],
+				["vending_machine_glitch1.png"],
+				["vending_machine_night.png"]
+			]
+		},
+		{
+			"id": "corridor_pov",
+			"label": "Corridor POV",
+			"variants": [
+				["coridor2.png"]
+			]
+		},
+		{
+			"id": "lockers",
+			"label": "Lockers",
+			"variants": [
+				["lockers.png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
+			]
+		},
+		{
+			"id": "",
+			"label": "",
+			"variants": [
+				[".png"]
 			]
 		}
 	]
