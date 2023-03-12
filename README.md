@@ -13,3 +13,5 @@ Camera Monika: https://pianoboycaleb.github.io/dddg/monika.outfit.cm.silver.cleb
 Spamto: https://pianoboycaleb.github.io/dddg/spamto.boobielover103.cleb/repo.json
 
 Random Guy: https://pianoboycaleb.github.io/dddg/randomguy.tmm.cleb/repo.json
+
+Extra Backgrounds/Edits: https://pianoboycaleb.github.io/dddg/various.backgrounds.extra.cleb/repo.json
